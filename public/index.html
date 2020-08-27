@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employee Viewer</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/buttons.css">
+  <link rel="stylesheet" href="./css/table.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <article>
+      
+      <header>
+        <h1>Empleados</h1>
+        <strong>
+          ¡Base de datos de empleados al día!
+        </strong>
+        <br/>
+        <p>
+          Podrá filtrar por Supervisor, Clase, Subsidiaria y Departamento e inmediadamente saldrá agrupado por Supervisor y ordenado por nombre
+        </p>
+        <br/>
+        <div>
+          <button id="btnExcel">Exportar a Excel</button>
+          <button id="btnCSV">Exportar a CSV</button>
+          <button id="btnPDF">Exportar a PDF</button>
+        </div>
+        <br/>
+      </header>
+
+      <main>
+        <table id="employeesTable">
+          <thead>
+            <tr>
+              <th>
+                <span>Nombre</span>
+              </th>
+              <th>
+                <span>Cargo</span>
+              </th>
+              <th>
+                <span>Supervisor</span>
+              </th>
+              <th>
+                <span>Clase</span>
+              </th>
+              <th>
+                <span>Subsidiaria</span>
+              </th>
+              <th>
+                <span>Departamento</span>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+      </main>
+
+    </article>
+  </div>
+  
+  <!-- Libraries for PDF -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.3/jspdf.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.9/jspdf.plugin.autotable.min.js"></script>
+
+  <!-- Owner -->
+  <script src="./js/utils.js"></script>
+  <script src="./js/btnEvents.js"></script>
+  <script src="./js/store.js"></script>
+  <script src="./js/manipulateDOM.js"></script>
+  <script src="./index.js"></script>
+</body>
+</html>

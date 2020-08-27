@@ -1,0 +1,54 @@
+:root {
+  --bgHeader: #2980BA;
+  --colorHeader: white;
+  --colorSelected: #2980BA;
+  --interpolateColor: #F0F0F0;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: gray;
+}
+.container > article {
+  height: 90%;
+  width: 90%;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 5px 10px black;
+  display: flex;
+  flex-direction: column;
+}
+
+
+header {
+  padding: 1em;
+}
+header p {
+  max-width: 600px;
+  margin: auto;
+}
+
+
+main {
+  height: 100%;
+  overflow: scroll;
+}
+
+
+@media (max-width: 680px) {
+  
+  .container > article {
+    height: 100%;
+    width: 100%;
+  }
+}

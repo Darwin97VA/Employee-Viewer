@@ -1,0 +1,22 @@
+
+button {
+  margin: .5em;
+  padding: .5em 1.75em;
+  cursor: pointer;
+  background: var(--colorSelected);
+  color: white;
+  border: none;
+  transition: all .2s;
+  opacity: .9;
+  font-weight: bold;
+}
+button:hover {
+  opacity: .7;
+}
+button:active {
+  opacity: 1;
+}
+button:focus {
+  outline: 1px solid var(--colorSelected);
+  outline-offset: 2px;
+}
