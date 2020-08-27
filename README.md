@@ -1,4 +1,6 @@
-# Proyect: Employee Viewer
+# Project: Employee Viewer
+
+You can see the running project in: [Employee Viewer](https://darwin97va.github.io/Employee-Viewer/public/)
 
 ## How to run
 
